@@ -1,0 +1,82 @@
+.login {
+    background: $white;
+    margin-bottom: 66px;
+    
+    .login-form {
+        padding: 33.5px 46px;
+
+        .form-title {
+            font-family: $secondary-font;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: left;
+            color: $color;
+            margin-bottom: 35px;
+        }
+
+        label {
+            font-family: $primary-font;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: left;
+            color: #4c4c4c;
+        }
+
+        .margin {
+            margin-bottom: 30px;
+        }
+
+        .capcha {
+            .capcha-img {
+                width: 80%;
+            }
+
+            .refresh {
+                background: $secondary-color;
+                color: $white;
+                border: none;
+                width: 20%;
+                border-radius: .5rem;
+            }
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: .95rem;
+            margin-top: 1.5rem;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 1rem;
+            color: $white;
+            font-family: $primary-font;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 18px;
+            text-align: center;
+            background: #22a58e;
+            filter: drop-shadow(0px 5px 12px rgba(34, 165, 142, 0.15));
+        }
+
+        .forgot {
+            font-family: $primary-font;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: left;
+            color: rgba(76, 76, 76, 0.53);
+        }
+    }
+
+    .login-wall {
+        background-color: $primary-color;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../images/products/lgbg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}

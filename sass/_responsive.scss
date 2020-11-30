@@ -220,12 +220,7 @@
             margin-bottom: 40px;
 
             .filter-title {
-                font-family: $secondary-font;
-                font-weight: 500;
                 font-size: 24px;
-                line-height: 28px;
-                text-align: left;
-                color: $color;
                 margin-bottom: 1.5rem;
             }
 
@@ -234,31 +229,18 @@
                 // width: 350px;
 
                 .form-control {
-                    border: none;
-                    filter: drop-shadow(0px 3px 6px rgba(44, 40, 40, 0.11));
                     padding: 10.5px 0 10.5px 10px;
-                    border-radius: 21px;
                     margin-bottom: 1.5rem;
                 }
 
                 .search-btn {
-                    width: 42px;
-                    height: 42px;
-                    border: none;
-                    border-radius: 50%;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    background: $secondary-color;
-                    color: $white;
+                    width: 40px;
+                    height: 40px;
                 }
             }
 
             .form-group {
                 .nice-select {
-                    border: none;
-                    text-overflow: ellipsis;
-                    border-radius: 21.5px;
                     width: calc(100% - 100px);
                 }
             }

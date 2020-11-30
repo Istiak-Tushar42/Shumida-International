@@ -205,7 +205,14 @@
             }
 
             .sort {
-                @extend .category;
+                border-radius: 21.5px;
+                background: $white;
+                border: 1px solid #4fbba8;
+                font-weight: 500;
+                font-size: 12px;
+                padding: 12px 16px;
+                text-align: left;
+                opacity: 0.8;
             }
 
             .nice-select {
@@ -213,6 +220,7 @@
                 // white-space: normal;
                 text-overflow: ellipsis;
                 border-radius: 21.5px;
+                width: calc(100% - 90px);
             }
         }
     }

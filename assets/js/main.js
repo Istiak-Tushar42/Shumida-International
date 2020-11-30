@@ -45,3 +45,6 @@ currentTime(); /* calling currentTime() function to initiate the process */
 $(document).ready(function() {
     $('select').niceSelect();
 });
+
+// DATE PICKER
+$('.datepicker').datepicker();

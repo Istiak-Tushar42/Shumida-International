@@ -1,6 +1,8 @@
 .login {
     background: $white;
     margin-bottom: 66px;
+    border-radius: 12px;
+    filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.08));
     
     .login-form {
         padding: 33.5px 46px;
@@ -25,7 +27,12 @@
         }
 
         .margin {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+
+            .form-control {
+                padding: 0;
+                padding: 7px;
+            }
         }
 
         .capcha {
@@ -44,7 +51,7 @@
 
         .login-btn {
             width: 100%;
-            padding: .95rem;
+            padding: 13px 0;
             margin-top: 1.5rem;
             border-radius: 5px;
             border: none;
@@ -56,16 +63,21 @@
             line-height: 18px;
             text-align: center;
             background: #22a58e;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
             filter: drop-shadow(0px 5px 12px rgba(34, 165, 142, 0.15));
         }
 
         .forgot {
             font-family: $primary-font;
             font-weight: normal;
-            font-size: 14px;
+            font-size: 12px;
             line-height: 18px;
             text-align: left;
             color: rgba(76, 76, 76, 0.53);
+
+            &:hover {
+                color: $primary-color;
+            }
         }
     }
 
@@ -76,7 +88,28 @@
         align-items: center;
         justify-content: center;
         background-image: url(../images/products/lgbg.png);
-        background-size: 100%;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
+        border-radius: 12px;
+        // padding: -60px;
+        // box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+        filter: drop-shadow(0px 5px 12px rgba(34, 165, 142, 0.15));
+        
+
+        .login-img {
+            overflow: hidden;
+            width: 40%;
+            margin: auto;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .login-wall {
+        height: auto;
     }
 }

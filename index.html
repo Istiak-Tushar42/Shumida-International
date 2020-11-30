@@ -33,7 +33,7 @@
             <!-- MAIN SECTION START -->
             <div class="container-fluid">
                 <!-- HEADER SECTION START -->
-                <div class="row no-gutters head-section">
+                <div class="row head-section">
                     <div class="d-flex align-items-center justify-content-between header-top">
                         <ul class="header-left">
                             <li>Welcome Guest <span class="pipe">|</span></li>
@@ -61,7 +61,7 @@
                     <div class="header-bottom">
                         <ul>
                             <li>
-                                <a href="javascript:void(0)">Product<span>&mdash;</span></a>
+                                <a href="javascript:void(0)" class="active-page">Product<span>&mdash;</span></a>
                             </li>
                             <li>
                                 <a href="login.html">Login</a>
@@ -71,280 +71,408 @@
                 </div>
                 <!-- HEADER SECTION END -->
                 
-                <!-- PRODUCT SECTION START -->
-                <div class="row no-gutters product">
-                    <div class="col-11 p-0">
-                        <!-- SHOW ALL PRODUCTS SECTION START -->
-                        <div class="row no-gutters product-section">
-                            <!-- FILTERING -->
-                            <div class="row filters">
-                                <div class="col-lg-2">
-                                    <h1 class="product-title">Products</h1>
+                <!-- PRODUCT SECTION -->
+                <div class="row">
+                    <div class="col-md-10 product-section">
+                        <div class="filtering row">
+                            <div class="col-md-2 col-12">
+                                <h2 class="filter-title">Products</h2>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="search-field">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <button type="submit" class="btn-search">
+                                        <i class="icon-search"></i>
+                                    </button>
                                 </div>
+                            </div>
 
-                                <div class="col-lg-10">
-                                    <form class="filter-form">
-                                        <div class="row">
-                                            <div class="col-lg-5">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control search-input" placeholder="Search">
-                                                    <button type="submit" class="search-btn">
-                                                        <i class="icon-search"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
+                            <div class="col-md-3 col-12">
+                                <div class="form-group">
+                                    <span class="category">
+                                        Category
+                                    </span>
+                                    <select class="nice-select">
+                                        <option selected>All Category</option>
+                                        <option value="1">Men</option>
+                                        <option value="2">Women</option>
+                                        <option value="3">Category</option>
+                                        <option value="4"> Category Category</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                                            <div class="col-lg-3">
-                                                <div class="input-group flex-nowrap catrgory-list">
-                                                    <span class="input-group-text" id="addon-wrapping">Category</span>
-                                                    <select class="nice-select wide">
-                                                        <option selected>All</option>
-                                                        <option value="1">Categoty</option>
-                                                        <option value="2">Men</option>
-                                                        <option value="3">Women</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                            <div class="col-md-3 col-12">
+                                <div class="form-group">
+                                    <span class="sort">
+                                        Sort By
+                                    </span>
+                                    <select class="nice-select">
+                                        <option selected>Popularity</option>
+                                        <option value="1">Men</option>
+                                        <option value="2">Women</option>
+                                        <option value="3">Child</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
 
-                                            <div class="col-lg-4">
-                                                <div class="input-group flex-nowrap sort-list">
-                                                    <span class="input-group-text" id="addon-wrapping">Shot By</span>
-                                                    <select class="nice-select wide">
-                                                        <option selected>Popularity</option>
-                                                        <option value="1">Men</option>
-                                                        <option value="2">Women</option>
-                                                        <option value="3">Brand</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                        <div class="prod-items">
+                            <div class="prod">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
                                         </div>
-                                    </form>
-                                </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
 
-                            <!-- PRODUCTS -->
-                            <div class="row no-gutters products">
-                                <div class="row prosec-1">
-                                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 mr-lg-5">
-                                        <a href="#">
-                                            <div class="card">
-                                                <div class="product-img">
-                                                    <img src="assets/images/products/1.png" class="card-img-top" alt="product1">
-                                                </div>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Dummy Item SK2</h5>
-                                                    <p class="card-text">MYR <span class="price">200.00</span></p>
-                                                    <p class="card-text">AP <span class="price2">100.00</span></p>
-                                                </div>
-                                            </div>
-                                        </a>
+                            <div class="prod">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
                                     </div>
-    
-                                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 mr-lg-5">
-                                        <a href="#">
-                                            <div class="card">
-                                                <div class="product-img">
-                                                    <img src="assets/images/products/2.png" class="card-img-top" alt="product2">
-                                                </div>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Dummy Item SK2</h5>
-                                                    <p class="card-text">MYR <span class="price">200.00</span></p>
-                                                    <p class="card-text">AP <span class="price2">100.00</span></p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-    
-                                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 mr-lg-5">
-                                        <a href="#">
-                                            <div class="card">
-                                                <div class="product-img">
-                                                    <img src="assets/images/products/3.png" class="card-img-top" alt="product3">
-                                                </div>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Dummy Item SK2</h5>
-                                                    <p class="card-text">MYR <span class="price">200.00</span></p>
-                                                    <p class="card-text">AP <span class="price2">100.00</span></p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-    
-                                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 mr-lg-5">
-                                        <a href="#">
-                                            <div class="card">
-                                                <div class="product-img">
-                                                    <img src="assets/images/products/4.png" class="card-img-top" alt="product4">
-                                                </div>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Dummy Item SK2</h5>
-                                                    <p class="card-text">MYR <span class="price">200.00</span></p>
-                                                    <p class="card-text">AP <span class="price2">100.00</span></p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+                                </a>
+                            </div>
 
-                                    <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                                        <a href="#">
-                                            <div class="card">
-                                                <div class="product-img">
-                                                    <img src="assets/images/products/5.png" class="card-img-top" alt="product5">
-                                                </div>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Dummy Item SK2</h5>
-                                                    <p class="card-text">MYR <span class="price">200.00</span></p>
-                                                    <p class="card-text">AP <span class="price2">100.00</span></p>
-                                                </div>
-                                            </div>
-                                        </a>
+                            <div class="prod">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
+                            </div>
 
-                                <div class="row prosec-2">
-                                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 mr-lg-5">
-                                        <a href="#">
-                                            <div class="card">
-                                                <div class="product-img">
-                                                    <img src="assets/images/products/6.png" class="card-img-top" alt="product6">
-                                                </div>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Dummy Item SK2</h5>
-                                                    <p class="card-text">MYR <span class="price">200.00</span></p>
-                                                    <p class="card-text">AP <span class="price2">100.00</span></p>
-                                                </div>
-                                            </div>
-                                        </a>
+                            <div class="prod">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
                                     </div>
-                                    
-                                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 mr-lg-5">
-                                        <a href="#">
-                                            <div class="card">
-                                                <div class="product-img">
-                                                    <img src="assets/images/products/7.png" class="card-img-top" alt="product7">
-                                                </div>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Dummy Item SK2</h5>
-                                                    <p class="card-text">MYR <span class="price">200.00</span></p>
-                                                    <p class="card-text">AP <span class="price2">100.00</span></p>
-                                                </div>
-                                            </div>
-                                        </a>
+                                </a>
+                            </div>
+
+                            <div class="prod">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
                                     </div>
-                                    
-                                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 mr-lg-5">
-                                        <a href="#">
-                                            <div class="card">
-                                                <div class="product-img">
-                                                    <img src="assets/images/products/8.png" class="card-img-top" alt="product8">
-                                                </div>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Dummy Item SK2</h5>
-                                                    <p class="card-text">MYR <span class="price">200.00</span></p>
-                                                    <p class="card-text">AP <span class="price2">100.00</span></p>
-                                                </div>
-                                            </div>
-                                        </a>
+                                </a>
+                            </div>
+
+                            <div class="prod">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
                                     </div>
-                                    
-                                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 mr-lg-5">
-                                        <a href="#">
-                                            <div class="card">
-                                                <div class="product-img">
-                                                    <img src="assets/images/products/9.png" class="card-img-top" alt="product9">
-                                                </div>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Dummy Item SK2</h5>
-                                                    <p class="card-text">MYR <span class="price">200.00</span></p>
-                                                    <p class="card-text">AP <span class="price2">100.00</span></p>
-                                                </div>
-                                            </div>
-                                        </a>
+                                </a>
+                            </div>
+
+                            <div class="prod">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
                                     </div>
-    
-                                    <div class="col-lg-2 col-md-3 col-6">
-                                        <a href="#">
-                                            <div class="card">
-                                                <div class="product-img">
-                                                    <img src="assets/images/products/10.png" class="card-img-top" alt="product10">
-                                                </div>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Dummy Item SK2</h5>
-                                                    <p class="card-text">MYR <span class="price">200.00</span></p>
-                                                    <p class="card-text">AP <span class="price2">100.00</span></p>
-                                                </div>
-                                            </div>
-                                        </a>
+                                </a>
+                            </div>
+
+                            <div class="prod">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
                                     </div>
-                                </div>
-                                
-                                <div class="row prosec-1">
-                                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 mr-lg-5">
-                                        <a href="#">
-                                            <div class="card">
-                                                <div class="product-img">
-                                                    <img src="assets/images/products/11.png" class="card-img-top" alt="product11">
-                                                </div>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Dummy Item SK2</h5>
-                                                    <p class="card-text">MYR <span class="price">200.00</span></p>
-                                                    <p class="card-text">AP <span class="price2">100.00</span></p>
-                                                </div>
-                                            </div>
-                                        </a>
+                                </a>
+                            </div>
+
+                            <div class="prod">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
                                     </div>
-                                    
-                                    <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                                        <a href="#">
-                                            <div class="card">
-                                                <div class="product-img">
-                                                    <img src="assets/images/products/12.png" class="card-img-top" alt="product12">
-                                                </div>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Dummy Item SK2</h5>
-                                                    <p class="card-text">MYR <span class="price">200.00</span></p>
-                                                    <p class="card-text">AP <span class="price2">100.00</span></p>
-                                                </div>
-                                            </div>
-                                        </a>
+                                </a>
+                            </div>
+
+                            <div class="prod">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
+                            </div>
+
+                            <div class="prod">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        <!-- SHOW ALL PRODUCTS SECTION END -->
 
-                        <div class="row pagination-section">
-                            <div class="col-12 d-flex justify-content-end">
-                                <!-- PAGINATION -->
-                                <div class="pagination-sec">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination align-items-center">
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Previous">
-                                                    <i class="icon-chevron-left"></i>
-                                                </a>
-                                            </li>
-        
-                                            <li class="page-no">Page Number <span>1</span> Of <span>4</span></li>
-        
-                                            <!-- <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li> -->
-        
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Next">
-                                                    <i class="icon-chevron-right"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <!-- PAGINATION END -->
+                        <!-- <div class="row products">
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <a href="#" class="product-item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="assets/images/products/1.png" alt="" class="card-img-top img-fluid">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Dummy Item SK2</h5>
+                                            <p class="card-text">MYR <span>200.00</span></p>
+                                            <p class="card-text">AP <span>100.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
-                <!-- PRODUCT SECTION END -->
+                <!-- PRODUCT SECTION -->
             </div>
             <!-- MAIN SECTION END -->
         </div>

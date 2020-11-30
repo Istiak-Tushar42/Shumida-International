@@ -1,0 +1,97 @@
+@media (max-width: 768px) {
+    .dropdown-list {
+        font-size: 11px;
+    }
+    /* INFO SECTION */
+    .info-section {
+        .bonus-section {
+            .card {
+                margin-bottom: 22px;
+
+                .card-body {
+                    padding: 11px 23px 10px 18px;
+
+                    div {
+                        h6 {
+                            font-size: 8px;
+                            margin-bottom: 5px;
+                        }
+            
+                        h1 {
+                            font-size: 42px;
+                        }
+                    }
+
+                    .arrow {
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        background: $primary-color;
+
+                        i {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .member-info {
+            .card-body {
+                .info-title {
+                    margin-bottom: 1.5rem;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    /* LATEST NEWS SECTION */
+    .latest-news {
+
+        .card {
+            padding:18px;
+            margin-top: -110px;
+
+            .card-title {
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+
+            .card-body {
+                padding: 0;
+
+                .news {
+                    padding: 12px 10px;
+                    margin-bottom: 20px;
+
+                    .news-img {
+                        padding-right: 11px;
+                    }
+
+                    .news-content {
+                        .news-title {
+                            font-size: 12px;
+                            line-height: 40px;
+                        }
+
+                        .user-name {
+                            margin-top: 8px;
+                            font-size: 9px;
+                        }
+
+                        .news-text {
+                            font-size: 10px;
+                            margin-bottom: 7px;
+                        }
+
+                        .news-btn {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}

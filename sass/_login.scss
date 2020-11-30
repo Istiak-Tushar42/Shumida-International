@@ -20,7 +20,7 @@
         label {
             font-family: $primary-font;
             font-weight: normal;
-            font-size: 15px;
+            font-size: 12px;
             line-height: 18px;
             text-align: left;
             color: #4c4c4c;
@@ -108,8 +108,8 @@
     }
 }
 
-@media (max-width: 991px) {
-    .login-wall {
-        height: auto;
-    }
-}
+// @media (max-width: 991px) {
+//     .login-wall {
+//         height: auto;
+//     }
+// }

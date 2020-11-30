@@ -2303,6 +2303,10 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   padding: 30px 15px 0 15px;
 }
 
+.product-section .filtering {
+  margin-bottom: 40px;
+}
+
 .product-section .filtering .filter-title {
   font-family: "Sawarabi Gothic", sans-serif;
   font-weight: 500;
@@ -2310,6 +2314,30 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   line-height: 28px;
   text-align: left;
   color: #172B4D;
+}
+
+.product-section .filtering .search-field {
+  position: relative;
+}
+
+.product-section .filtering .search-field .form-control {
+  border: none;
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(44, 40, 40, 0.11));
+          filter: drop-shadow(0px 3px 6px rgba(44, 40, 40, 0.11));
+  padding: 10.5px 0 10.5px 10px;
+  border-radius: 21px;
+}
+
+.product-section .filtering .search-field .search-btn {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #22A58E;
+  color: #FFFFFF;
 }
 
 .product-section .filtering .form-group {
@@ -2325,7 +2353,7 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
           box-shadow: 0px 5px 12px rgba(23, 23, 23, 0.12);
 }
 
-.product-section .filtering .form-group .category {
+.product-section .filtering .form-group .category, .product-section .filtering .form-group .sort {
   border-radius: 21.5px;
   background: #FFFFFF;
   border: 1px solid #4fbba8;
@@ -2339,6 +2367,7 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
 .product-section .filtering .form-group .nice-select {
   border: none;
   text-overflow: ellipsis;
+  border-radius: 21.5px;
 }
 
 .prod-items {
@@ -2360,6 +2389,95 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
           flex: 0 0 20%;
   margin-bottom: 50px;
   padding: 0 15px;
+}
+
+.prod-items .card {
+  -webkit-box-shadow: 0px 5px 12px rgba(23, 23, 23, 0.12);
+          box-shadow: 0px 5px 12px rgba(23, 23, 23, 0.12);
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(44, 40, 40, 0.11));
+          filter: drop-shadow(0px 3px 6px rgba(44, 40, 40, 0.11));
+}
+
+.prod-items .card .card-img {
+  overflow: hidden;
+}
+
+.prod-items .card .card-img .card-img-top {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.prod-items .card .card-img .card-img-top:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.prod-items .card .card-body .card-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 22px;
+  text-align: center;
+  color: #a86007;
+}
+
+.prod-items .card .card-body .card-text {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 19px;
+  text-align: center;
+  opacity: 0.65;
+  color: #172B4D;
+  font-weight: 500;
+}
+
+.prod-items .card .card-body .card-text:last-child {
+  color: #4fbba8;
+}
+
+.produc .card {
+  -webkit-box-shadow: 0px 5px 12px rgba(23, 23, 23, 0.12);
+          box-shadow: 0px 5px 12px rgba(23, 23, 23, 0.12);
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(44, 40, 40, 0.11));
+          filter: drop-shadow(0px 3px 6px rgba(44, 40, 40, 0.11));
+  margin-bottom: 18px;
+}
+
+.produc .card .card-img {
+  overflow: hidden;
+}
+
+.produc .card .card-img .card-img-top {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.produc .card .card-img .card-img-top:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.produc .card .card-body .card-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 22px;
+  text-align: center;
+  color: #a86007;
+}
+
+.produc .card .card-body .card-text {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 19px;
+  text-align: center;
+  opacity: 0.65;
+  color: #172B4D;
+  font-weight: 500;
+}
+
+.produc .card .card-body .card-text:last-child {
+  color: #4fbba8;
 }
 
 /* FOOTER SECTION START */
@@ -2513,7 +2631,7 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
 .login .login-form label {
   font-family: "Rubik", sans-serif;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 18px;
   text-align: left;
   color: #4c4c4c;
@@ -2601,12 +2719,6 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
 
 .login .login-wall .login-img img {
   width: 100%;
-}
-
-@media (max-width: 991px) {
-  .login-wall {
-    height: auto;
-  }
 }
 
 @media (max-width: 768px) {

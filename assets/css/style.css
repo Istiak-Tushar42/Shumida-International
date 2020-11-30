@@ -1903,6 +1903,7 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   color: #FFFFFF;
 }
 
+/* SPONSOR TREE */
 .sponsor-tree .card .card-title {
   font-family: "Sawarabi Gothic", sans-serif;
   font-weight: 500;
@@ -2898,6 +2899,54 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   }
   .latest-news .card .card-body .news .news-content .news-btn {
     font-size: 10px;
+  }
+  /* PRODUCT SECTION */
+  .product-section {
+    margin-bottom: 25px;
+    padding: 30px 15px 0 15px;
+  }
+  .product-section .filtering {
+    margin-bottom: 40px;
+  }
+  .product-section .filtering .filter-title {
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #172B4D;
+    margin-bottom: 1.5rem;
+  }
+  .product-section .filtering .search-field {
+    position: relative;
+  }
+  .product-section .filtering .search-field .form-control {
+    border: none;
+    -webkit-filter: drop-shadow(0px 3px 6px rgba(44, 40, 40, 0.11));
+            filter: drop-shadow(0px 3px 6px rgba(44, 40, 40, 0.11));
+    padding: 10.5px 0 10.5px 10px;
+    border-radius: 21px;
+    margin-bottom: 1.5rem;
+  }
+  .product-section .filtering .search-field .search-btn {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #22A58E;
+    color: #FFFFFF;
+  }
+  .product-section .filtering .form-group .nice-select {
+    border: none;
+    text-overflow: ellipsis;
+    border-radius: 21.5px;
+    width: calc(100% - 100px);
+  }
+  .product-section .filtering .ctg {
+    margin-bottom: 1.5rem;
   }
 }
 

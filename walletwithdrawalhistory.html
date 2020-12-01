@@ -32,6 +32,14 @@
                     <img src="assets/images/logo.svg" alt="" class="img-fluid">
                 </a>
 
+                <div class="d-lg-none d-block">
+                    <div class="close-icon">
+                        <a href="javascript:void(0)" class="close-btn">
+                            <i class="icon-x"></i>
+                        </a>
+                    </div>
+                </div>
+
                 <nav class="main-menu">
                     <ul class="main-menu-lists">
                         <li class="main-menu-list">
@@ -122,6 +130,17 @@
             <div class="container-fluid">
                 <!-- HEADER SECTION START -->
                 <div class="row no-gutters header-section">
+                    <div class="mobile-logo d-lg-none d-block">
+                        <div class="d-flex align-items-center justify content-center">
+                            <a href="dashboard.html" class="navbar-brand mx-auto">
+                                <img src="assets/images/logo-white.svg" width="120" alt="" class="img-fluid mb-3">
+                            </a>
+
+                            <a href="javascript:void(0)" class="mm-icon">
+                                <i class="icon-menu text-white"></i>
+                            </a>
+                        </div>
+                    </div>
                     <div class="d-flex align-items-center justify-content-between header-top">
                         <ul class="header-left">
                             <li>Welcome Shumaida <span class="pipe">|</span></li>
@@ -160,7 +179,7 @@
                     <div class="header-bottom">
                         <ul>
                             <li>
-                                <a href="javascript:void(0)">Wallet<span>&mdash;</span></a>
+                                <a href="javascript:void(0)" class="active-page">Wallet<span>&mdash;</span></a>
                             </li>
                             <li>
                                 <a href="">Wallet Withdrawal History</a>
@@ -170,7 +189,7 @@
                 </div>
                 <!-- HEADER SECTION END -->
                 
-                <!-- REGISTER SECTION START -->
+                <!-- WALLET WITHDRAWAL SECTION START -->
                 <div class="row register-section">
                     <div class="col-12">
                         <div class="card">
@@ -182,15 +201,26 @@
                                 <form class="reg-form">
                                     <div class="reg-info">
                                         <div class="mb-3 row">
-                                            <label for="transaction" class="col-md-3 col-form-label">Transaction Date</label>
+                                            <label for="transaction" class="col-md-2 col-form-label">Transaction Date</label>
                                             <div class="col-md-5">
-                                                <input data-provide="datepicker" placeholder="From" class="form-control mb-3">
-                                                <input data-provide="datepicker" placeholder="To" class="form-control">
+                                                <div class="input-group date date-input mb-3" data-provide="datepicker">
+                                                    <input type="text" class="form-control" placeholder="From">
+                                                    <div class="input-group-addon">
+                                                        <span class="icon-calendar"></span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-group date date-input" data-provide="datepicker">
+                                                    <input type="text" class="form-control" placeholder="To">
+                                                    <div class="input-group-addon">
+                                                        <span class="icon-calendar"></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
                                         <div class="mb-3 row">
-                                            <label for="payment" class="col-md-3 col-form-label">Wallet Type</label>
+                                            <label for="payment" class="col-md-2 col-form-label">Wallet Type</label>
                                             <div class="col-md-5">
                                                 <select class="nice-select wide">
                                                     <option selected>All</option>
@@ -202,7 +232,7 @@
                                         </div>
 
                                         <div class="mb-3 row">
-                                            <label for="payment" class="col-md-3 col-form-label">Status</label>
+                                            <label for="payment" class="col-md-2 col-form-label">Status</label>
                                             <div class="col-md-5">
                                                 <select class="nice-select wide">
                                                     <option selected>All</option>
@@ -214,7 +244,7 @@
                                         </div>
 
                                         <div class="row buttons">
-                                            <div class="col-md-3"></div>
+                                            <div class="col-md-2"></div>
                                             <div class="col-md-5 btn-group">
                                                 <button type="submit" class="submit-btn">Transfer</button>
                                                 <button type="reset" class="reset-btn">Reset</button>
@@ -247,7 +277,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- REGISTER SECTION END -->
+                <!-- WALLET WITHDRAWAL SECTION END -->
             </div>
             <!-- MAIN SECTION END -->
         </div>
@@ -329,7 +359,6 @@
                         </div>
                     </div>
                 </div>
-
                 
                 <div class="row">
                     <div class="col-12">

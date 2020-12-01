@@ -9,10 +9,10 @@
         <meta name="keywords" content="">
         <!-- FONT AWESOME CDN -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-        <!-- BOOTSTRAP CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!-- NICE SELECT CSS -->
         <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!-- BOOTSTRAP CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!-- CUSTOM CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- PAGE TITLE -->
@@ -34,6 +34,7 @@
             <div class="container-fluid">
                 <!-- HEADER SECTION START -->
                 <div class="row head-section">
+                    <!-- MOBILE LOGO -->
                     <div class="mobile-logo d-lg-none d-block">
                         <div class="d-flex align-items-center justify content-center">
                             <a href="index.html" class="navbar-brand mx-auto">
@@ -82,7 +83,7 @@
                 <!-- PRODUCT SECTION -->
                 <div class="row">
                     <div class="col-lg-10 product-section">
-                        <div class="filtering row">
+                        <div class="filtering row align-items-center">
                             <div class="col-lg-2">
                                 <h2 class="filter-title">Products</h2>
                             </div>
@@ -98,7 +99,7 @@
                                         </div>
                                     </div>
         
-                                    <div class="col-lg-4 col-12">
+                                    <div class="col-lg-4 col-12 p-0">
                                         <div class="form-group ctg">
                                             <span class="category">
                                                 Category
@@ -112,8 +113,8 @@
                                         </div>
                                     </div>
         
-                                    <div class="col-lg-4 col-12 p-0">
-                                        <div class="form-group">
+                                    <div class="col-lg-4 col-12">
+                                        <div class="form-group sorting">
                                             <span class="sort">
                                                 Sort By
                                             </span>
@@ -494,6 +495,44 @@
                     </div>
                 </div>
                 <!-- PRODUCT SECTION -->
+
+                <!-- PAGINATIONS -->
+                <div class="row page-pagination">
+                    <div class="col-lg-10 col-12">
+                        <div class="d-flex justify-content-end">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <i class="icon-chevron-left"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    
+                                    <!-- <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+
+
+                                    <li class="page-item">
+                                        <p>
+                                            Page Number <span>1</span> of <span>4</span>
+                                        </p>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <i class="icon-chevron-right"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- MAIN SECTION END -->
         </div>
@@ -575,7 +614,6 @@
                         </div>
                     </div>
                 </div>
-
                 
                 <div class="row">
                     <div class="col-12">

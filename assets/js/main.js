@@ -1,18 +1,3 @@
-// const dropdown = document.querySelectorAll('.main-menu-list');
-const dropdown = document.querySelectorAll('.menu-dropdown');
-
-
-// parent = dropdown.parentElement.parentNode;
-// console.log(parent)
-
-dropdown.forEach((e) => {
-    e.addEventListener('click', () => {
-
-        e.classList.toggle('show');
-        
-    });
-});
-
 /** SHOW DATE ON HEADER */
 const showDate = document.querySelector('#date');
 var today = new Date();
@@ -41,10 +26,42 @@ function updateTime(k) {
 
 currentTime(); /* calling currentTime() function to initiate the process */
 
+// const dropdown = document.querySelectorAll('.main-menu-list');
+const dropdown = document.querySelectorAll('.menu-dropdown');
+
+// SHOW HIDE SIDEBAR VARIABLES
+const sidebar = document.querySelector('.side-nav');
+const menuIcon = document.querySelector('.mm-icon');
+const closebtn = document.querySelector('.close-btn');
+
+menuIcon.addEventListener('click', showSidebar);
+closebtn.addEventListener('click', hideSidebar);
+
+// window.addEventListener('click', hideSidebar);
+
+function showSidebar() {
+    sidebar.classList.add('show');
+}
+
+function hideSidebar() {
+    sidebar.classList.remove('show');
+}
+
+// parent = dropdown.parentElement.parentNode;
+// console.log(parent)
+
+dropdown.forEach((e) => {
+    e.addEventListener('click', () => {
+        e.classList.toggle('show');
+    });
+});
+
+
 /** NICE SELECT INITIALIZATION */
 $(document).ready(function() {
     $('select').niceSelect();
 });
+
 
 // DATE PICKER
 $('.datepicker').datepicker();

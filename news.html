@@ -26,6 +26,14 @@
                     <img src="assets/images/logo.svg" alt="" class="img-fluid">
                 </a>
 
+                <div class="d-lg-none d-block">
+                    <div class="close-icon">
+                        <a href="javascript:void(0)" class="close-btn">
+                            <i class="icon-x"></i>
+                        </a>
+                    </div>
+                </div>
+
                 <nav class="main-menu">
                     <ul class="main-menu-lists">
                         <li class="main-menu-list">
@@ -116,6 +124,18 @@
             <div class="container-fluid">
                 <!-- HEADER SECTION START -->
                 <div class="row no-gutters header-section">
+                    <div class="mobile-logo d-lg-none d-block">
+                        <div class="d-flex align-items-center justify content-center">
+                            <a href="dashboard.html" class="navbar-brand mx-auto">
+                                <img src="assets/images/logo-white.svg" width="120" alt="" class="img-fluid mb-3">
+                            </a>
+
+                            <a href="javascript:void(0)" class="mm-icon">
+                                <i class="icon-menu text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="d-flex align-items-center justify-content-between header-top">
                         <ul class="header-left">
                             <li>Welcome Shumaida <span class="pipe">|</span></li>
@@ -154,7 +174,7 @@
                     <div class="header-bottom">
                         <ul>
                             <li>
-                                <a href="news.html">News</a>
+                                <a href="news.html" class="active-page">News</a>
                             </li>
                         </ul>
                     </div>
@@ -163,84 +183,12 @@
                 
                 <div class="row no-gutters info-section">
                     <div class="col-lg-8">
-                        <!-- CARD SECTION START -->
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <h6>BONUS POINT</h6>
-                                                <h1>0.00</h1>
-                                            </div>
-        
-                                            <span class="arrow">
-                                                <i class="icon-arrow-right"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <h6>CP</h6>
-                                                <h1>0.00</h1>
-                                            </div>
-        
-                                            <span class="arrow">
-                                                <i class="icon-arrow-right"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <h6>PRODUCT COUNT</h6>
-                                                <h1>0.00</h1>
-                                            </div>
-        
-                                            <span class="arrow">
-                                                <i class="icon-arrow-right"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <h6>AGENT POINT</h6>
-                                                <h1>0.00</h1>
-                                            </div>
-        
-                                            <span class="arrow">
-                                                <i class="icon-arrow-right"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- CARD SECTION END -->
-
-                        <!-- LATEST NEWS SECTION START -->
+                        <!-- LATEST NEWS LIST SECTION START -->
                         <div class="row latest-news">
                             <div class="col-12">
                                 <div class="card">
                                     <h1 class="card-title">
-                                        Latest News
+                                        News List
                                     </h1>
     
                                     <div class="card-body">
@@ -343,60 +291,38 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- LATEST NEWS SECTION END -->
+                        <!-- LATEST NEWS LIST SECTION END -->
                     </div>
         
-                    <!-- INFO SECTION START -->
+                    <!-- FEATURED NEWS SECTION START -->
                     <div class="col-lg-4 mb-3">
                         <div class="card member-info">
                             <div class="card-body">
-                                <h1 class="info-title">Member Info</h1>
+                                <h1 class="info-title">Featured News</h1>
 
-                                <ul class="member-info-list nav flex-column">
-                                    <li class="d-flex align-items-center justify-content-between">
-                                        <span>Sponsor ID</span>
-                                        <span>Top Level</span>
-                                    </li>
+                                <div class="card-img">
+                                    <img src="assets/images/news.svg" alt="" class="card-img-top img-fluid">
+                                </div>
 
-                                    <hr>
+                                <h1 class="card-title">Korona and company financing - where to apply for support?</h1>
 
-                                    <li class="d-flex align-items-center justify-content-between">
-                                        <span>Sponsor ID</span>
-                                        <span>Master88</span>
-                                    </li>
+                                <div class="d-flex user">
+                                    <div class="news-pro">
+                                        <img src="assets/images/ellipse.svg" alt="">
+                                    </div>
 
-                                    <hr>
+                                    <span class="user-name">Nick Henderson</span>
+                                </div>
 
-                                    <li class="d-flex align-items-center justify-content-between">
-                                        <span>Member Name</span>
-                                        <span>Shumida</span>
-                                    </li>
+                                <p class="news-text">
+                                    The coronavirus pandemic has plagued many healthy and prosperous businesses. Especially in an exceptional situation like this, every entrepreneur facing difficulties should be the first to find out
+                                </p>
 
-                                    <hr>
-
-                                    <li class="d-flex align-items-center justify-content-between">
-                                        <span>Package</span>
-                                        <span>VIP 3</span>
-                                    </li>
-
-                                    <hr>
-
-                                    <li class="d-flex align-items-center justify-content-between">
-                                        <span>Date Joined</span>
-                                        <span>2020-02-06</span>
-                                    </li>
-
-                                    <hr>
-
-                                    <li class="d-flex align-items-center justify-content-between">
-                                        <span>Expiry Date</span>
-                                        <span>2020-12-09</span>
-                                    </li>
-                                </ul>
+                                <a href="" class="news-btn">Read Full Story ></a>
                             </div>
                         </div>
                     </div>
-                    <!-- INFO SECTION END -->
+                    <!-- FEATURED NEWS SECTION END -->
                 </div>
             </div>
             <!-- MAIN SECTION END -->
@@ -479,7 +405,6 @@
                         </div>
                     </div>
                 </div>
-
                 
                 <div class="row">
                     <div class="col-12">
